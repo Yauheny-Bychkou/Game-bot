@@ -17,13 +17,13 @@ function one(argument) {
       one();
     } else if (number === "") {
       alert("Введи число!");
+      count++;
       one();
     } else if (number === null) {
       alert("Игра закончена!");
-      return (x = null);
+      return;
     } else if (number > x) {
       alert(`Загаданное число больше, осталось попыток: ${count}`);
-
       one();
     } else if (number < x) {
       alert(`Загаданное число меньше, осталось попыток: ${count}`);
@@ -35,6 +35,7 @@ function one(argument) {
       one();
     } else if (typeof number !== "number") {
       alert("Введи число!");
+      count++;
       one();
     }
   }
