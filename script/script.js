@@ -26,11 +26,11 @@ function one(argument) {
       alert("Игра закончена!");
       return;
     } else if (number > x) {
-      alert(`Загаданное число больше, осталось попыток: ${count}`);
+      alert(`Загаданное число меньше, осталось попыток: ${count}`);
       count--;
       two();
     } else if (number < x) {
-      alert(`Загаданное число меньше, осталось попыток: ${count}`);
+      alert(`Загаданное число больше, осталось попыток: ${count}`);
       count--;
       two();
     } else if (number == x) {
